@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device=width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha384-wDpF7M/Gn5SJ/pfaUg7+C/Z9HRXih0Ib6Py8eO2K3zo+YUq8Q93AF1PbIc1SM1GQ" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/b84e5b1c3f.js" crossorigin="anonymous"></script>
     <title>Programming Club</title>
     <style>
     /**/
@@ -12,60 +14,87 @@
 </head>
 <body>
     <p style="background-image: url('cimabglong.jpg');"></p>
-    <nav class="navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="index.html"><b>CimaCode</b></a>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#home"><b>Inicio</b><span class='sr-only'>(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#nosotros"><b>Nosotros</b></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#mentalidad"><b>Mentalidad</b></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#valores"><b>Valores</b></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#unete"><b>Unete</b></a>
-                </li>
-            </ul> 
+    <nav id="navbar" class="navbar-expand-lg navbar-light bg-light">
+        <div class="navbar-logo">
+            <img src="imgs/logo_negro.png" alt="Logo CimaCode" class="header_logo">
         </div>
+        <div class = "navbar-contenido">
+            <a class="navbar-brand" href="index.html"><b>CimaCode</b></a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#inicio"><b>Inicio</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#nosotros"><b>Nosotros</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#mentalidad"><b>Mentalidad</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#valores"><b>Valores</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#unete"><b>Únete</b></a>
+                    </li>
+                </ul> 
+            </div>
+        </div>
+        
     </nav>
-    <section id="home">
-        <div class="container">
+    <section class="with-margin" id="inicio">
+        <div class="container_home">
             <h1 class="text-center display-3">¡Hola!</h1>
             <h2 class="text-center display-7">Somos un club de alumnos de la Universidad Autónoma de Baja California que representa el área de Software.</h2>
         </div>
     </section>
-    <section id="nosotros">
-        <div class="container">
+    <section class="with-margin" id="nosotros">
+        <div class="container_nosotros">
             <h1 class="text-center display-3">Nosotros</h1>
-            <h2 class="text-center display-7">Somos una comunidad...</h2>
+            <div class ="container_contenidoNosotros">
+                <div class="container_imgNosotros">
+                    <img src="imgs/IMG-9201.JPG" alt="Participacion ICPC" class="imagen_nosotros">
+                </div>
+                <h2 class="text-center display-7">El nombre "CimaCode" simboliza la mascota oficial de la universidad (borrego cimarrón) junto con la palabra código en inglés. Buscamos realizar proyectos relacionados al área de software y programación competitiva a lo largo de nuestra instancia en la universidad al igual que incorporar a más estudiantes interesados.</h2>
+            </div>
         </div>
     </section>
-    <section id="mentalidad">
-        <div class="container">
+    <section class="with-margin" id="mentalidad">
+        <div class="container_mentalidad">
             <h1 class="text-center display-3">Mentalidad</h1>
-            <h2 class="text-center display-7">Place Holder</h2>
+            <h2 class="text-center display-7">En Cimacode se cultiva la mentalidad de aprendizaje continuo y colaborativo entre todos los integrantes. Nos es importante crear un entorno donde estudiantes con diferentes niveles de experiencia se sientan bienvenidos y valorados. </h2>
         </div>
     </section>
-    <section id="valores">
-        <div class="container">
+    <section class="with-margin" id="valores">
+        <div class="container_valores">
             <h1 class="text-center display-3">Valores</h1>
-            <h2 class="text-center display-7">Place Holder</h2>
+            <h2 class="text-center display-7">En CimaCode nuestros valores son la Responsabilidad                     , el Liderazgo, el Respeto, el Trabajo en equipo y la Paciencia
+            </h2>
         </div>
     </section>
-    <section id="unete">
-        <div class="container">
-            <h1 class="text-center display-3">Unete</h1>
-            <h2 class="text-center display-7">Place Holder</h2>
+    <section class="with-margin" id="unete">
+        <div class="container_unete">
+            <h1 class="text-center display-3">Sé parte del movimiento</h1>
+            <div class="container_bandeja">
+                <input type="text" class="bandeja_correo" placeholder="Escribe tu correo aquí">
+                <div class="container_send">
+                    <i class="fa-solid fa-paper-plane"></i>
+                </div>
+            </div>
+            
+            
         </div>
     </section>
     <footer class="footer-margin">
-        <p>2023 CimaCode</p>
+        <div class="footer_contenido">
+            <h2 class="dudas">¿Tienes dudas?</h2>
+            <h2 class="footer_contactanos">Contáctanos: cimacodesview@uabc.edu.mx</h2>
+        </div>
+
+        <div class="footer_logo">
+            <img src="imgs/Untitled-Artwork (4).png" alt="Logo CimaCode" class="logo_footerCimacode">
+        </div>
     </footer>
+    <script src="script.js"></script>
 </body>
-</html>
+</html> 
