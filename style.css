@@ -6,6 +6,21 @@ body {
 }
 .navbar-light.bg-light {
       background-color: transparent !important;
+      text-align: center;
+}
+.navbar-brand{
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+    margin-left: 2rem;
+}
+.navbar-brand:hover{
+    color: #f0ad4e;
+}
+.navbar-nav{
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
 }
 h1{
     margin-top: 3rem;
