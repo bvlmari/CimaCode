@@ -6,24 +6,15 @@ html, body {
     scroll-behavior: smooth;
     
 }
-
-body {
-    padding-top: 20px; /* Adjust this value to match the height of your navbar */
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    margin: 0;
+.navbar-logo{
+    margin-left: 2rem;    
 }
-
-.navbar-collapse {
+ 
+ .navbar-collapse {
     /*position: fixed;*/    
     transition: top 0.3s;
 }
-#navbar {
-    position: sticky;
-    top: 0;
-    transition: top 0.3s;
-}
+
 
 .navbar-light.bg-light {
       background-color: transparent !important;
@@ -53,7 +44,7 @@ body {
 .navbar-contenido{
     display: block;
     justify-content: center;
-    margin: auto; 
+    align-items: center; 
 }
 
 .navbar-nav .nav-item {
@@ -80,28 +71,21 @@ body {
 
 .footer_contactanos{
     margin-left: 0rem;
-    margin-right: 5rem;
+    margin-right: 0rem;
    
-    justify-content: left;
-    align-items: left;
+    justify-content: center;
+    align-items: center;
     text-align: left;
     font-size: 1.5rem;
     color: white;
     
 }
 
-.header_logo{
-    width: 100%;
-    height: auto;
-    max-height: 100%;
-    
-}
 
 .footer_logo{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
+    width: 200px;
+            height: 200px;
+    
 }
 
 #navbar {
@@ -120,6 +104,26 @@ h2{
     margin-top: 3rem;
     margin-bottom: 3rem;
     font-size:1.5rem;
+}
+
+.go-up{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: black;
+
+}
+
+.go-up:hover{
+    background-color: white;
+    color: black;
+    text-decoration: none;
 }
 
 
@@ -148,8 +152,10 @@ h2{
     margin-left: 3rem;
     margin-right: 3rem;
     margin-bottom: 10rem;
-    
-    
+}
+
+.text-center.display-7{
+    margin-left:2rem;
 }
 
 .container_mentalidad{
@@ -209,46 +215,56 @@ h2{
 }
 
 .imagen_nosotros{
-    width: 100%;
-    height: auto;
+    border-radius: 5%;
+    width: 500px;
+    height: 350px;
 }
 
 
 
 .footer-info{
-    
     display: flex;
     
 }
 
+
 .logo_footerCimacode{
-    width: auto;
-    max-height: 10rem;
-    object-fit: contain;
+    margin-left: 0rem;
+    padding: 1.2rem;
+    width: 200px;
+    height: 200px;
+    
+    
+
 }
 
 .footer-margin{
-    margin-top: auto;
     background-color: black;
     display: flex;
     color: white;
     width: 100%;
-    min-height: 10rem;
-    margin-bottom: 0;
+    height: 9rem;
     text-align: center;
     font-size: 1.2rem;
-    padding: 0rem 2rem 0rem 2rem;
+    padding: 2rem;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
 }
+
+.footer_contenido{
+    display: block;
+   
+    
+    margin-right: 35rem;
+    margin-bottom: 5rem;
+}
+
 
 
 
 
 footer p{/*Texto del pie de pagina*/
     margin: 0;
-    margin-top: 0;
     font-size: 1.8rem;
     color: white;
 }
@@ -280,7 +296,7 @@ footer p{/*Texto del pie de pagina*/
 section::before {
     content: "";
     display: block;
-    height: 50px; /* Adjust this value to match the height of your navbar */
-    margin: 100px 0 0; /* This should be the negative value of the height */
+    height: 3rem; /* Ajusta la altura según tu necesidad */
+    margin-top: -9rem; /* Un valor negativo igual al margen superior que deseas */
     visibility: hidden;
 }
